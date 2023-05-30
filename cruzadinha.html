@@ -12,7 +12,7 @@
 
     <div class="linha1">
         <div class="item1">
-            <input type="text" id="letra1" maxlength="1">
+            <input type="text" id="letra1" maxlength="1" placeholder="1v">
         </div>
     </div>
 
@@ -27,13 +27,13 @@
             <input type="text" id="letra3" maxlength="1">
         </div>
         <div class="item2">
-            <input type="text" id="letra4" maxlength="1">
-            <input type="text" id="letra5" maxlength="1">
+            <input type="text" id="letra4" maxlength="1" placeholder="12>">
+            <input type="text" id="letra5" maxlength="1" placeholder="11v">
             <input type="text" id="letra6" maxlength="1">
             <input type="text" id="letra7" maxlength="1">
             <input type="text" id="letra8" value="-" disabled maxlength="1">
             <input type="text" id="letra9" maxlength="1">
-            <input type="text" id="letra10" maxlength="1">
+            <input type="text" id="letra10" maxlength="1" placeholder="13v">
             <input type="text" id="letra11" maxlength="1">
         </div>
     </div>
@@ -48,9 +48,7 @@
         <div class="item3">
             <input type="text" id="letra14" maxlength="1">
         </div>
-        <div class="item4">
-            <input type="text" id="letra15" maxlength="1">
-        </div>
+
     </div>
 
     <div class="linha5">
@@ -64,7 +62,7 @@
             <input type="text" id="letra18" maxlength="1">
         </div>
         <div class="item4">
-            <input type="text" id="letra19" maxlength="1">
+            <input type="text" id="letra19" maxlength="1" placeholder="16v">
         </div>
     </div>
 
@@ -85,15 +83,15 @@
             <input type="text" id="letra23" maxlength="1">
         </div>
         <div class="item2">
-            <input type="text" id="letra24" maxlength="1">
+            <input type="text" id="letra24" maxlength="1" placeholder="3 v">
         </div>
         <div class="item3">
-            <input type="text" id="letra25" maxlength="1">
+            <input type="text" id="letra25" maxlength="1" placeholder="14>">
             <input type="text" id="letra26" maxlength="1">
             <input type="text" id="letra27" maxlength="1">
             <input type="text" id="letra28" maxlength="1">
             <input type="text" id="letra29" maxlength="1">
-            <input type="text" id="letra30" maxlength="1">
+            <input type="text" id="letra30" maxlength="1" placeholder="15v">
             <input type="text" id="letra31" maxlength="1">
             <input type="text" id="letra32" maxlength="1" value="-" disabled>
             <input type="text" id="letra33" maxlength="1">
@@ -124,13 +122,13 @@
 
     <div class="linha9">
         <div class="item1">
-            <input type="text" id="letra45" maxlength="1">
+            <input type="text" id="letra45" maxlength="1" placeholder="7 v">
         </div>
         <div class="item2">
-            <input type="text" id="letra46" maxlength="1">
+            <input type="text" id="letra46" maxlength="1" placeholder="2 >">
             <input type="text" id="letra47" maxlength="1">
             <input type="text" id="letra48" maxlength="1">
-            <input type="text" id="letra49" maxlength="1">
+            <input type="text" id="letra49" maxlength="1" placeholder="5 v">
             <input type="text" id="letra50" maxlength="1">
             <input type="text" id="letra51" maxlength="1">
             <input type="text" id="letra52" maxlength="1">
@@ -140,9 +138,6 @@
             <input type="text" id="letra56" maxlength="1">
             <input type="text" id="letra57" maxlength="1">
             <input type="text" id="letra58" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra59" maxlength="1">
         </div>
     </div>
 
@@ -166,7 +161,7 @@
 
     <div class="linha11">
         <div class="item1">
-            <input type="text" id="letra65" maxlength="1">
+            <input type="text" id="letra65" maxlength="1" placeholder="6 >">
             <input type="text" id="letra66" maxlength="1">
             <input type="text" id="letra67" maxlength="1">
         </div>
@@ -183,7 +178,7 @@
             <input type="text" id="letra70" maxlength="1">
         </div>
         <div class="item2">
-            <input type="text" id="letra71" maxlength="1">
+            <input type="text" id="letra71" maxlength="1" placeholder="4 >">
             <input type="text" id="letra72" maxlength="1">
             <input type="text" id="letra73" maxlength="1">
         </div>
@@ -206,7 +201,7 @@
             <input type="text" id="letra77" maxlength="1">
         </div>
         <div class="item2">
-            <input type="text" id="letra78" maxlength="1">
+            <input type="text" id="letra78" maxlength="1" placeholder="9v10>">
             <input type="text" id="letra79" maxlength="1">
             <input type="text" id="letra80" maxlength="1">
             <input type="text" id="letra81" maxlength="1">
@@ -216,7 +211,7 @@
 
     <div class="linha15">
         <div class="item1">
-            <input type="text" id="letra83" maxlength="1">
+            <input type="text" id="letra83" maxlength="1" placeholder="8 >">
             <input type="text" id="letra84" maxlength="1">
             <input type="text" id="letra85" maxlength="1">
             <input type="text" id="letra86" maxlength="1">
@@ -226,7 +221,10 @@
         </div>
     </div>
 
-    <button onclick="verificar()">verificar</button>
+
+    <div class="butao">
+        <button onclick="verificar()">verificar</button>
+    </div>
 
 </body>
 
@@ -236,6 +234,22 @@
     body {
         margin-top: 2%;
         margin-left: 17%;
+        background-color: rgb(245, 219, 125);
+    }
+
+    .butao {
+        margin-top: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .butao button{
+        border-radius: 25px;
+        padding: 1.7vh;
+        font-size: 2vh;
+        border: 0;
+        background-color: rgb(234, 136, 188);
     }
 
     div {
@@ -313,11 +327,11 @@
     }
 
     .linha7 .item2 {
-        margin-left: 19.4vh;
+        margin-left: 24.2vh;
     }
 
     .linha7 .item3 {
-        margin-left: 19.4vh;
+        margin-left: 14.7vh;
     }
 
     .linha8 .item1 {
@@ -325,15 +339,15 @@
     }
 
     .linha8 .item2 {
-        margin-left: 19.4vh;
-    }
-
-    .linha8 .item3 {
         margin-left: 24.2vh;
     }
 
+    .linha8 .item3 {
+        margin-left: 19.5vh;
+    }
+
     .linha8 .item4 {
-        margin-left: 63vh;
+        margin-left: 14.5vh;
     }
 
     .linha9 .item2 {
@@ -484,7 +498,7 @@
             document.getElementById(`letra41`).style.border = "#00ff00 2px solid";
             document.getElementById(`letra47`).style.border = "#00ff00 2px solid";
         } else {
-            document.getElementById(`letra2`).style.border = "#ff0000 2px solid";
+            document.getElementById(`letra1`).style.border = "#ff0000 2px solid";
             document.getElementById(`letra2`).style.border = "#ff0000 2px solid";
             document.getElementById(`letra3`).style.border = "#ff0000 2px solid";
             document.getElementById(`letra12`).style.border = "#ff0000 2px solid";
@@ -530,7 +544,7 @@
         }
 
 
-        var threads = letra83 + letra84 + letra85 + letra86 + letra87 + letra88 + letra89
+        var threads = letra83.value + letra84.value + letra85.value + letra86.value + letra87.value + letra88.value + letra89.value
         if (threads == "threads") {
             i = 1;
             while (i <= 6) {
@@ -575,7 +589,7 @@
                 i++
             }
         }
-
+        letra1
 
         var databus = letra4.value + letra5.value + letra6.value + letra7.value + letra9.value + letra10.value + letra11.value;
 
@@ -592,7 +606,6 @@
                 i++;
             }
         }
-
 
         var ula = letra10.value + letra14.value + letra18.value
 
@@ -650,24 +663,47 @@
             document.getElementById(`letra74`).style.border = "#ff0000 1px solid";
 
         }
-        var flash = letra15.value + letra19.value + letra22.value + letra40.value + letra44.value + letra59.value
 
-        if(flash == 'flash'){
+        // var flash = letra15.value + letra19.value + letra22.value + letra40.value + letra44.value + letra59.value
 
-            document.getElementById(`letra15`).style.border = "#00ff00 1px solid";
+        // if(flash == 'flash'){
+
+        //     document.getElementById(`letra15`).style.border = "#00ff00 1px solid";
+        //     document.getElementById(`letra19`).style.border = "#00ff00 1px solid";
+        //     document.getElementById(`letra22`).style.border = "#00ff00 1px solid";
+        //     document.getElementById(`letra40`).style.border = "#00ff00 1px solid";
+        //     document.getElementById(`letra44`).style.border = "#00ff00 1px solid";
+        //     document.getElementById(`letra59`).style.border = "#00ff00 1px solid";
+
+        // }else{
+        //     document.getElementById(`letra15`).style.border = "#ff0000 1px solid";
+        //     document.getElementById(`letra19`).style.border = "#ff0000 1px solid";
+        //     document.getElementById(`letra22`).style.border = "#ff0000 1px solid";
+        //     document.getElementById(`letra40`).style.border = "#ff0000 1px solid";
+        //     document.getElementById(`letra44`).style.border = "#ff0000 1px solid";
+        //     document.getElementById(`letra59`).style.border = "#ff0000 1px solid";
+        // }
+
+        var i5 = letra30.value + letra44.value;
+
+        if(i5 == "i5"){
+            document.getElementById(`letra30`).style.border = "#00ff00 1px solid";
+            document.getElementById(`letra44`).style.border = "#00ff00 1px solid";
+        }else{
+            document.getElementById(`letra30`).style.border = "#ff0000 1px solid";
+            document.getElementById(`letra44`).style.border = "#ff0000 1px solid";
+        }
+
+        var dma = letra19.value + letra22.value + letra40.value;
+
+        if(dma == "dma"){
             document.getElementById(`letra19`).style.border = "#00ff00 1px solid";
             document.getElementById(`letra22`).style.border = "#00ff00 1px solid";
             document.getElementById(`letra40`).style.border = "#00ff00 1px solid";
-            document.getElementById(`letra44`).style.border = "#00ff00 1px solid";
-            document.getElementById(`letra59`).style.border = "#00ff00 1px solid";
-
         }else{
-            document.getElementById(`letra15`).style.border = "#ff0000 1px solid";
             document.getElementById(`letra19`).style.border = "#ff0000 1px solid";
             document.getElementById(`letra22`).style.border = "#ff0000 1px solid";
             document.getElementById(`letra40`).style.border = "#ff0000 1px solid";
-            document.getElementById(`letra44`).style.border = "#ff0000 1px solid";
-            document.getElementById(`letra59`).style.border = "#ff0000 1px solid";
         }
     }
 </script>
