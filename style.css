@@ -178,3 +178,12 @@
     .linha15 .item1 {
         margin-left: 29vh;
     }
+
+
+.corCerta{
+    border-color: greenyellow;
+    background-color: aqua;
+}
+.corErrada{
+    border: 1px red solid;    
+}

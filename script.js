@@ -18,15 +18,16 @@ var vetorDica = ["1 - Tem dois núcleos de processamento, permitindo que o proce
 var palavras = ["quadcore", "registradores", "dualcore", "cpu", "i7", "rom", "eprom", "threads", "cs", "cache", "addressbus", "databus", "ula", "memoriademassa", "i5", "dma"]
 
 var dicaVetor = 0;
+var textoConcatenado = "";
+var inputs;
 
 function dicas(num) {
-    var textoConcatenado = "";
     for (var i = 1; i <= 87; i++) {
         if (document.getElementById(`letra${i}`).disabled == false) {
             document.getElementById(`letra${i}`).disabled = true;
-        }
-        document.getElementById(`letra${i}`).style.border = "#cccccc solid 1px";
 
+        }
+        
     }
 
 
@@ -39,18 +40,37 @@ function dicas(num) {
     }
     span_dica.innerHTML = `${vetorDica[dicaVetor]}`
 
-    var inputs = document.getElementsByClassName(`${palavras[dicaVetor]}`);
+    inputs = document.getElementsByClassName(`${palavras[dicaVetor]}`);
 
     for (var i = 0; i < inputs.length; i++) {
-        inputs[i].style.border = "#000000 solid 1px"; // Altere "red" para a cor desejada
-        document.getElementsByClassName(`${palavras[dicaVetor]}`).disabled = false;
-        textoConcatenado += inputs[i].value;
+        inputs[i].style.border = "#000000 solid 1px"; 
+        inputs[i].disabled = false;
         console.log(inputs[i].value);
     }
-    alert(textoConcatenado);
 
 }
 
+function verificar(){
+    textoConcatenado = ""
+    for (var i = 0; i < inputs.length; i++) {
+        textoConcatenado += inputs[i].value
+
+    }
+    if(textoConcatenado == palavras[dicaVetor]){
+        palavras.splice(dicaVetor,1);
+        vetorDica.splice(dicaVetor,1);
+        dicas(0)
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].style.border = "#00ff00 solid 1px"; 
+            
+        }
+    }else{
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].style.border = "#ff0000 solid 1px"; 
+
+        }
+    }
+}
 
 
 
