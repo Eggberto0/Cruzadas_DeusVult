@@ -11,231 +11,236 @@
 </head>
 
 <body>
-    <div style="display: flex; text-align: center; width: 100%; align-items: center; margin-left: 0%;">
-        <img src="Captura_de_tela_de_2023-06-18_09-22-51-removebg-preview.png" style="rotate: 180deg; cursor: pointer;"  onclick="dicas(-1)">
-        <span id="span_dica"> saaaaaaaaaaaaaaaaaaaaaaaa </span>
-        <img style="cursor: pointer;" src="Captura_de_tela_de_2023-06-18_09-22-51-removebg-preview.png" onclick="dicas(1)">
-    </div>
-    <div class="linha1">
-        <div class="item1">
-            <input type="text" id="letra1" maxlength="1" class="quadcore" placeholder="1v">
-        </div>
+<div class="tela">
+    <div class="dica">
+        <img src="Captura_de_tela_de_2023-06-18_09-22-51-removebg-preview.png" style="rotate: 180deg; cursor: pointer;"
+            onclick="dicas(-1)">
+        <h2 id="span_dica" class="span_dica"> saaaaaaaaaaaaaaaaaaaaaaaa </h2>
+        <img style="cursor: pointer;" src="Captura_de_tela_de_2023-06-18_09-22-51-removebg-preview.png"
+            onclick="dicas(1)">
     </div>
 
-    <div class="linha2">
-        <div class="item1">
-            <input type="text" id="letra2" class="quadcore" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha3">
-        <div class="item1">
-            <input type="text" id="letra3" class="quadcore" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra4"  class="databus" maxlength="1" placeholder="12>">
-            <input type="text" id="letra5"  class="addressbus databus" maxlength="1" placeholder="11v">
-            <input type="text" id="letra6"  class="databus" maxlength="1">
-            <input type="text" id="letra7"  class="databus" maxlength="1">
-            <input type="text" id="letra8"  sssssssvalue="-" disabled maxlength="1">
-            <input type="text" id="letra9"  class="databus" maxlength="1">
-            <input type="text" id="letra10" class="databus ula" maxlength="1" placeholder="13v">
-            <input type="text" id="letra11" class="databus" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha4">
-        <div class="item1">
-            <input type="text" id="letra12" class="quadcore" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra13" class="addressbus" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra14" class="ula" maxlength="1">
+    <div class="cruzada">
+        <div class="linha1">
+            <div class="item1">
+                <input type="text" id="letra1" maxlength="1" class="quadcore" placeholder="1v">
+            </div>
         </div>
 
-    </div>
-    <div class="linha5">
-        <div class="item1">
-            <input type="text" id="letra15" value="-" disabled maxlength="1">
+        <div class="linha2">
+            <div class="item1">
+                <input type="text" id="letra2" class="quadcore" maxlength="1">
+            </div>
         </div>
-        <div class="item2">
-            <input type="text" id="letra16" class="addressbus" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra17" class="ula" maxlength="1">
-        </div>
-        <div class="item4">
-            <input type="text" id="letra18"  class="dma" maxlength="1" placeholder="16v">
-        </div>
-    </div>
 
-    <div class="linha6">
-        <div class="item1">
-            <input type="text" id="letra19" class="quadcore" maxlength="1">
+        <div class="linha3">
+            <div class="item1">
+                <input type="text" id="letra3" class="quadcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra4" class="databus" maxlength="1" placeholder="12>">
+                <input type="text" id="letra5" class="addressbus databus" maxlength="1" placeholder="11v">
+                <input type="text" id="letra6" class="databus" maxlength="1">
+                <input type="text" id="letra7" class="databus" maxlength="1">
+                <input type="text" id="letra8" sssssssvalue="-" disabled maxlength="1">
+                <input type="text" id="letra9" class="databus" maxlength="1">
+                <input type="text" id="letra10" class="databus ula" maxlength="1" placeholder="13v">
+                <input type="text" id="letra11" class="databus" maxlength="1">
+            </div>
         </div>
-        <div class="item2">
-            <input type="text" id="letra20" class="addressbus" maxlength="1">
+
+        <div class="linha4">
+            <div class="item1">
+                <input type="text" id="letra12" class="quadcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra13" class="addressbus" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra14" class="ula" maxlength="1">
+            </div>
+
         </div>
-        <div class="item3">
-            <input type="text" id="letra21" class="dma"  maxlength="1">
+        <div class="linha5">
+            <div class="item1">
+                <input type="text" id="letra15" value="-" disabled maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra16" class="addressbus" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra17" class="ula" maxlength="1">
+            </div>
+            <div class="item4">
+                <input type="text" id="letra18" class="dma" maxlength="1" placeholder="16v">
+            </div>
+        </div>
+
+        <div class="linha6">
+            <div class="item1">
+                <input type="text" id="letra19" class="quadcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra20" class="addressbus" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra21" class="dma" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha7">
+            <div class="item1">
+                <input type="text" id="letra22" class="quadcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra23" class="dualcore" maxlength="1" placeholder="3 v">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra24" class="memoriademassa" maxlength="1" placeholder="14>">
+                <input type="text" id="letra25" class="memoriademassa addressbus" maxlength="1">
+                <input type="text" id="letra26" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra27" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra28" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra29" class="memoriademassa i5" maxlength="1" placeholder="15v">
+                <input type="text" id="letra30" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra31" maxlength="1" value="-" disabled>
+                <input type="text" id="letra32" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra33" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra34" maxlength="1" value="-" disabled>
+                <input type="text" id="letra35" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra36" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra37" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra38" class="memoriademassa" maxlength="1">
+                <input type="text" id="letra39" class="memoriademassa dma" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha8">
+            <div class="item1">
+                <input type="text" id="letra40" class="quadcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra41" class="dualcore" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra42" class="addressbus" maxlength="1">
+            </div>
+            <div class="item4">
+                <input type="text" id="letra43" class="i5" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha9">
+            <div class="item1">
+                <input type="text" id="letra44" class="eprom" maxlength="1" placeholder="7 v">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra45" class="registradores" maxlength="1" placeholder="2 >">
+                <input type="text" id="letra46" class="quadcore registradores" class="registradores" maxlength="1">
+                <input type="text" id="letra47" class="registradores" maxlength="1">
+                <input type="text" id="letra48" class="registradores i7" maxlength="1" placeholder="5 v">
+                <input type="text" id="letra49" class="registradores" maxlength="1">
+                <input type="text" id="letra50" class="registradores" maxlength="1">
+                <input type="text" id="letra51" class="registradores" maxlength="1">
+                <input type="text" id="letra52" class="registradores dualcore" maxlength="1">
+                <input type="text" id="letra53" class="registradores" maxlength="1">
+                <input type="text" id="letra54" class="registradores" maxlength="1">
+                <input type="text" id="letra55" class="registradores" maxlength="1">
+                <input type="text" id="letra56" class="registradores" maxlength="1">
+                <input type="text" id="letra57" class="registradores addressbus" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha10">
+            <div class="item1">
+                <input type="text" id="letra58" class="eprom" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra59" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra60" class="i7" maxlength="1">
+            </div>
+            <div class="item4">
+                <input type="text" id="letra61" class="dualcore" maxlength="1">
+            </div>
+            <div class="item5">
+                <input type="text" id="letra62" class="addressbus" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha11">
+            <div class="item1">
+                <input type="text" id="letra63" class="rom eprom" maxlength="1" placeholder="6 >">
+                <input type="text" id="letra64" class="rom" maxlength="1">
+                <input type="text" id="letra65" class="rom" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra66" value="-" disabled maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra67" class="addressbus" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha12">
+            <div class="item1">
+                <input type="text" id="letra68" class="eprom" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra69" class="dualcore cpu" maxlength="1" placeholder="4 >">
+                <input type="text" id="letra70" class="cpu" maxlength="1">
+                <input type="text" id="letra71" class="cpu" maxlength="1">
+            </div>
+            <div class="item3">
+                <input type="text" id="letra72" class="addressbus" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha13">
+            <div class="item1">
+                <input type="text" id="letra73" class="eprom" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra74" class="dualcore" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha14">
+            <div class="item1">
+                <input type="text" id="letra75" class="dualcore" maxlength="1">
+            </div>
+            <div class="item2">
+                <input type="text" id="letra76" class="cs cache" maxlength="1" placeholder="9v10>">
+                <input type="text" id="letra77" class="cache" maxlength="1">
+                <input type="text" id="letra78" class="cache" maxlength="1">
+                <input type="text" id="letra79" class="cache" maxlength="1">
+                <input type="text" id="letra80" class="cache" maxlength="1">
+            </div>
+        </div>
+
+        <div class="linha15">
+            <div class="item1">
+                <input type="text" id="letra81" class="threads" maxlength="1" placeholder="8 >">
+                <input type="text" id="letra82" class="threads" maxlength="1">
+                <input type="text" id="letra83" class="threads" maxlength="1">
+                <input type="text" id="letra84" class="dualcore threads" class="dualcore" maxlength="1">
+                <input type="text" id="letra85" class="threads" maxlength="1">
+                <input type="text" id="letra86" class="threads" maxlength="1">
+                <input type="text" id="letra87" class="threads cs" maxlength="1">
+            </div>
         </div>
     </div>
-
-    <div class="linha7">
-        <div class="item1">
-            <input type="text" id="letra22" class="quadcore" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra23" class="dualcore" maxlength="1" placeholder="3 v">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra24" class="memoriademassa"  maxlength="1" placeholder="14>">
-            <input type="text" id="letra25" class="memoriademassa addressbus"  maxlength="1">
-            <input type="text" id="letra26" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra27" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra28" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra29" class="memoriademassa i5" maxlength="1" placeholder="15v">
-            <input type="text" id="letra30" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra31"  maxlength="1" value="-" disabled>
-            <input type="text" id="letra32" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra33" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra34" maxlength="1" value="-" disabled>
-            <input type="text" id="letra35" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra36" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra37" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra38" class="memoriademassa" maxlength="1">
-            <input type="text" id="letra39" class="memoriademassa dma" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha8">
-        <div class="item1">
-            <input type="text" id="letra40" class="quadcore" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra41" class="dualcore" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra42" class="addressbus" maxlength="1">
-        </div>
-        <div class="item4">
-            <input type="text" id="letra43" class="i5" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha9">
-        <div class="item1">
-            <input type="text" id="letra44" class="eprom" maxlength="1" placeholder="7 v">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra45" class="registradores" maxlength="1" placeholder="2 >">
-            <input type="text" id="letra46" class="quadcore registradores" class="registradores" maxlength="1">
-            <input type="text" id="letra47" class="registradores" maxlength="1">
-            <input type="text" id="letra48" class="registradores i7" maxlength="1" placeholder="5 v">
-            <input type="text" id="letra49" class="registradores" maxlength="1">
-            <input type="text" id="letra50"  class="registradores" maxlength="1">
-            <input type="text" id="letra51"  class="registradores" maxlength="1">
-            <input type="text" id="letra52" class="registradores dualcore" maxlength="1">
-            <input type="text" id="letra53" class="registradores" maxlength="1">
-            <input type="text" id="letra54" class="registradores" maxlength="1">
-            <input type="text" id="letra55" class="registradores" maxlength="1">
-            <input type="text" id="letra56" class="registradores" maxlength="1">
-            <input type="text" id="letra57" class="registradores addressbus" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha10">
-        <div class="item1">
-            <input type="text" id="letra58" class="eprom" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra59" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra60" class="i7" maxlength="1">
-        </div>
-        <div class="item4">
-            <input type="text" id="letra61" class="dualcore" maxlength="1">
-        </div>
-        <div class="item5">
-            <input type="text" id="letra62"  class="addressbus" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha11">
-        <div class="item1">
-            <input type="text" id="letra63" class="rom eprom"  maxlength="1" placeholder="6 >">
-            <input type="text" id="letra64" class="rom" maxlength="1">
-            <input type="text" id="letra65" class="rom" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra66" value="-" disabled maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra67" class="addressbus" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha12">
-        <div class="item1">
-            <input type="text" id="letra68" class="eprom" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra69"  class="dualcore cpu" maxlength="1" placeholder="4 >">
-            <input type="text" id="letra70" class="cpu" maxlength="1">
-            <input type="text" id="letra71" class="cpu" maxlength="1">
-        </div>
-        <div class="item3">
-            <input type="text" id="letra72" class="addressbus" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha13">
-        <div class="item1">
-            <input type="text" id="letra73" class="eprom" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra74" class="dualcore" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha14">
-        <div class="item1">
-            <input type="text" id="letra75" class="dualcore" maxlength="1">
-        </div>
-        <div class="item2">
-            <input type="text" id="letra76" class="cs cache" maxlength="1" placeholder="9v10>">
-            <input type="text" id="letra77" class="cache" maxlength="1">
-            <input type="text" id="letra78" class="cache" maxlength="1">
-            <input type="text" id="letra79" class="cache" maxlength="1">
-            <input type="text" id="letra80" class="cache" maxlength="1">
-        </div>
-    </div>
-
-    <div class="linha15">
-        <div class="item1">
-            <input type="text" id="letra81" class="threads" maxlength="1" placeholder="8 >">
-            <input type="text" id="letra82" class="threads" maxlength="1">
-            <input type="text" id="letra83" class="threads" maxlength="1">
-            <input type="text" id="letra84" class="dualcore threads" class="dualcore" maxlength="1">
-            <input type="text" id="letra85" class="threads" maxlength="1">
-            <input type="text" id="letra86" class="threads" maxlength="1">
-            <input type="text" id="letra87" class="threads cs" maxlength="1">
-        </div>
-    </div>
-
 
     <div class="butao">
         <button onclick="verificar()">verificar</button>
     </div>
- 
+</div>
 </body>
 
 </html>
 
 <script>
 
-dicas(dicaVetor);
+    dicas(dicaVetor);
 </script>

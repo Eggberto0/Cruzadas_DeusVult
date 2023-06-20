@@ -25,7 +25,6 @@ function dicas(num) {
     for (var i = 1; i <= 87; i++) {
         if (document.getElementById(`letra${i}`).disabled == false) {
             document.getElementById(`letra${i}`).disabled = true;
-
         }
         
     }
@@ -34,7 +33,7 @@ function dicas(num) {
     if (dicaVetor == 0 && num == -1) {
         dicaVetor = vetorDica.length - 1;
     } else if (dicaVetor == vetorDica.length - 1 && num == 1) {
-        dicaVetor = 0; s
+        dicaVetor = 0;
     } else {
         dicaVetor = dicaVetor + num;
     }
@@ -59,15 +58,16 @@ function verificar(){
     if(textoConcatenado == palavras[dicaVetor]){
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].style.border = "#00ff00 solid 1px"; 
+            inputs[i].style.backgroundColor = "rgb(122, 255, 122)"
             
         }
-        palavras.splice(dicaVetor,1);
-        vetorDica.splice(dicaVetor,1);
-        dicas(0)
+        // palavras.splice(dicaVetor,1);
+        // vetorDica.splice(dicaVetor,1);
+        dicas(1)
     }else{
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].style.border = "#ff0000 solid 1px"; 
-
+            inputs[i].style.backgroundColor = "rgb(255, 122, 122)"
         }
     }
 }
