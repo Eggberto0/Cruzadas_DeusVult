@@ -1,6 +1,6 @@
-var vetorDica = ["1 - Tem dois núcleos de processamento, permitindo que o processador execute várias tarefas simultaneamente",
+var vetorDica = ["1 - Tem quatro núcleos, permitindo que o processador execute várias tarefas simultaneamente.",
     "2 - São pequenas áreas de armazenamento dentro da CPU usadas para guardar dados temporários, resultados e endereços de memória.",
-    "3 - Tem quatro núcleos, permitindo que o processador execute várias tarefas simultaneamente.",
+    "3 - Tem dois núcleos de processamento, permitindo que o processador execute várias tarefas simultaneamente",
     "4 - É a unidade central de processamento, responsável por executar as instruções e coordenar as operações de um computador",
     "5 - São processadores fabricados pela Intel Corporation, podendo ser quad-core ou hexa-core, com suporte para hyper-threading.",
     "6 - Memória de apenas leitura, contendo dados ou instruções permanentes.",
@@ -13,7 +13,7 @@ var vetorDica = ["1 - Tem dois núcleos de processamento, permitindo que o proce
     "13 - É a unidade lógica e aritmética dentro da CPU, responsável por realizar operações matemáticas e lógicas.",
     "14 - Memória de armazenamento permanente, como discos rígidos e SSDs.",
     "15 - São processadores fabricados pela Intel Corporation, geralmente sendo quad-core.",
-    "16 - Direct Memory Access é uma técnica que permite que dispositivos acessem diretamente a memória principal sem passar pela CPU, melhorando a eficiência do sistema.",
+    "16 - É uma técnica que permite que dispositivos acessem diretamente a memória principal sem passar pela CPU, melhorando a eficiência do sistema.",
 ]
 var palavras = ["quadcore", "registradores", "dualcore", "cpu", "i7", "rom", "eprom", "threads", "cs", "cache", "addressbus", "databus", "ula", "memoriademassa", "i5", "dma"]
 
@@ -57,13 +57,13 @@ function verificar(){
 
     }
     if(textoConcatenado == palavras[dicaVetor]){
-        palavras.splice(dicaVetor,1);
-        vetorDica.splice(dicaVetor,1);
-        dicas(0)
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].style.border = "#00ff00 solid 1px"; 
             
         }
+        palavras.splice(dicaVetor,1);
+        vetorDica.splice(dicaVetor,1);
+        dicas(0)
     }else{
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].style.border = "#ff0000 solid 1px"; 
