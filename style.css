@@ -19,6 +19,10 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-image: url('https://img.freepik.com/vetores-premium/gradiente-fundo-vazio-azul-da-sala_464385-258.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .span_dica {
@@ -28,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .dica img {
@@ -51,6 +56,11 @@ body {
     border: 0;
     background-color: rgb(234, 136, 188);
     font-size: 4vh;
+    cursor: pointer;
+}
+
+.butao button:hover {
+    background-color: rgb(255, 22, 146);
 }
 
 div {
